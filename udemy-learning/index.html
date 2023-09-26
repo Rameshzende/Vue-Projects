@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn the VUE JS by Udemy</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        .box {
+            padding: 100px 0;
+            width: 400px;
+            text-align: center;
+            margin: 20px;
+            background: #dddd;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="id">
+         {{ name }}
+         <div v-if="hideShow">
+            <p>Show and Hide the content</p>
+        </div>
+
+        <button @click="toggleHideAndShow">
+            <span v-if="hideShow === true">Hide Books</span>
+            <span v-if="hideShow === false">Show Book</span>
+        </button>
+
+        <br>
+
+        <!-- mouse events -->
+
+        <div class="box" @mouseover="handleEvent">mouseOver {enter}</div>
+        <div class="box" @mouseleave="handleEvent">mouseleave</div>
+        <div class="box" @dblclick="handleEvent">double click</div>
+        <div class="box"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
