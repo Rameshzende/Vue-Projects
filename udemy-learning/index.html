@@ -14,6 +14,17 @@
             background: #dddd;
             display: inline-block;
         }
+       
+
+        .isFav {
+            background-color: aqua;
+            width: 100%;
+            padding: 20px;
+            margin-top: 10px;
+        }
+        .movieCard {
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
@@ -22,6 +33,14 @@
          <div v-if="hideShow">
             <p>Show and Hide the content</p>
         </div>
+
+        
+        <div v-for="movie in movieList" :class="{isFav: movie.isFav, movieCard: true}">
+            <div @click="onFevSelect(movie)">
+             {{ movie.movieName}}  {{ movie.releaseDate}}  {{ movie.genre}}
+            </div>
+        </div>
+        
 
         <button @click="toggleHideAndShow">
             <span v-if="hideShow === true">Hide Books</span>
