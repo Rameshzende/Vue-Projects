@@ -33,8 +33,6 @@ const app = Vue.createApp({
         },
 
         onFevSelect(movie) {
-            debugger
-            console.log(movie)
             movie.isFav = !movie.isFav
         }
     }
