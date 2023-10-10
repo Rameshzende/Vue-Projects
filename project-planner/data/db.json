@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": " Page Edit",
+      "details": "Simple Projectskfkkf",
+      "complete": false
+    },
+    {
+      "id": 2,
+      "title": "Make Market Email",
+      "details": "Market analysis",
+      "complete": true
+    }
+  ]
+}
