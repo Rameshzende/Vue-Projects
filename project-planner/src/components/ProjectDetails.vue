@@ -1,7 +1,9 @@
 <template>
     <div class="projects" :class="{ complete : project.complete }">
+        
         <div class="action">
             <h3 @click="showDetails = !showDetails"> {{ project.title }}</h3>
+            
             <div class="icons">
                 <router-link :to="{name : 'editProject', params: { id : project.id }}">
                     <span class="material-icons">

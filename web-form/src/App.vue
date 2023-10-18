@@ -1,13 +1,16 @@
 <template>
-   <Signup />
+   <!-- <Signup /> -->
+   <List />
 </template>
 
 <script>
 import Signup from './components/Signup.vue';
+import List from './components/List.vue'
 export default {
   name: 'App',
   components: {
-    Signup
+    Signup,
+    List
   }
 }
 </script>
